@@ -29,6 +29,10 @@ CapsLock & k::Send +{8} ; *
 CapsLock & n::Send +{9} ; (
 CapsLock & m::Send +{0} ; )
 
+CapsLock & ,::[
+CapsLock & .::]
+
+; others characters
 CapsLock & Space::Backspace
 CapsLock & f::Enter
 
