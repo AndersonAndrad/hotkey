@@ -29,6 +29,9 @@ CapsLock & k::Send +{8} ; *
 CapsLock & n::Send +{9} ; (
 CapsLock & m::Send +{0} ; )
 
+CapsLock & l::Send +{-}
+CapsLock & `;::Send +{=}
+
 CapsLock & ,::[
 CapsLock & .::]
 
@@ -36,17 +39,15 @@ CapsLock & .::]
 CapsLock & Space::Backspace
 CapsLock & f::Enter
 
-/*
-CapsLock & q::1
-CapsLock & w::2
-CapsLock & e::3
-CapsLock & r::4
-CapsLock & t::5
-CapsLock & y::6
-CapsLock & u::7
-CapsLock & i::8
-CapsLock & o::9
-CapsLock & p::0
-CapsLock & [::-
-CapsLock & ]::=
-*/
+CapsLock & 1::F1
+CapsLock & 2::F2
+CapsLock & 3::F3
+CapsLock & 4::F4
+CapsLock & 5::F5
+CapsLock & 6::F6
+CapsLock & 7::F7
+CapsLock & 8::F8
+CapsLock & 9::F9
+CapsLock & 0::F10
+CapsLock & -::F11
+CapsLock & =::F12
