@@ -35,6 +35,11 @@ CapsLock & `;::Send +{=}
 CapsLock & ,::[
 CapsLock & .::]
 
+; change language
+Capslock & t::
+     Send, {Alt Down}{Shift Down}{Shift Up}{Alt Up}
+return
+
 ; others characters
 CapsLock & Space::Backspace
 CapsLock & f::Enter
