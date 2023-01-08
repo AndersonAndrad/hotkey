@@ -44,6 +44,8 @@ return
 CapsLock & Space::Backspace
 CapsLock & f::Enter
 
+CapsLock & `::Esc
+
 CapsLock & 1::F1
 CapsLock & 2::F2
 CapsLock & 3::F3
