@@ -32,6 +32,8 @@ CapsLock & m::Send +{0} ; )
 CapsLock & l::Send +{-}
 CapsLock & `;::Send +{=}
 
+CapsLock & c::?
+
 CapsLock & ,::[
 CapsLock & .::]
 
