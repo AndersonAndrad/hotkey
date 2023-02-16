@@ -16,6 +16,10 @@ CapsLock & d::Right
 CapsLock & s::Down
 CapsLock & q::Send ^+{Left}{Del}
 CapsLock & e::Send ^+{Right}{Del}
+
+; Reload script
+CapsLock & r::Reload
+
 ; Special Characters
 CapsLock & y::Send +{1} ; !
 CapsLock & u::Send +{2} ; @
