@@ -1,5 +1,5 @@
 ﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
-; #Warn  ; Enable warnings to assist with detecting common errors.
+;#Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance Force
@@ -14,8 +14,8 @@ CapsLock & w::Up
 CapsLock & a::Left
 CapsLock & d::Right
 CapsLock & s::Down
-CapsLock & q::Send ^+{Left}{Del}
-CapsLock & e::Send ^+{Right}{Del}
+CapsLock & q::Send {Shift Down}{Home}{Shift Up}{Delete}
+CapsLock & e::Send {Shift Down}{End}{Shift Up}{Delete}
 
 ; Reload script
 CapsLock & r::Reload
