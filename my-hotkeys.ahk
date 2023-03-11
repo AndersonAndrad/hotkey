@@ -14,8 +14,14 @@ CapsLock & w::Up
 CapsLock & a::Left
 CapsLock & d::Right
 CapsLock & s::Down
-CapsLock & q::Send {Shift Down}{Home}{Shift Up}{Delete}
+
+; Delete all word in left and right 
+CapsLock & q::Send {Shift Down}{Home}{Shift Up}{Delete}  
 CapsLock & e::Send {Shift Down}{End}{Shift Up}{Delete}
+
+; Navigate to start and end to word 
+CapsLock & z::Send {Ctrl Down}{Left}{Ctrl Up}
+CapsLock & x::Send {Ctrl Down}{Right}{Crtl Up}
 
 ; Reload script
 CapsLock & r::Reload
