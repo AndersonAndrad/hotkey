@@ -48,15 +48,14 @@ CapsLock & ,::[
 CapsLock & .::]
 
 ; change language
-Capslock & t::
-     Send, {Alt Down}{Shift Down}{Shift Up}{Alt Up}
-return
+Capslock & t::Send {Alt Down}{Shift Down}{Shift Up}{Alt Up}
 
 ; others characters
 CapsLock & Space::Backspace
 CapsLock & f::Enter
 
 CapsLock & `::Esc
+CapsLock & '::Esc
 
 CapsLock & 1::F1
 CapsLock & 2::F2
