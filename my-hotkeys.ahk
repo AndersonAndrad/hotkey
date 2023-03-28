@@ -20,8 +20,8 @@ CapsLock & q::Send {Ctrl Down}{BackSpace}{Ctrl Up}
 CapsLock & e::Send {Ctrl Down}{Delete}{Ctrl Up}
 
 ; Navigate to start and end to word 
-CapsLock & z::Send {Ctrl Down}{Left}{Ctrl Up}
-CapsLock & x::Send {Ctrl Down}{Right}{Crtl Up}
+CapsLock & z::Send ^{Left}
+CapsLock & x::Send ^{Right}
 
 ; Reload script
 CapsLock & r::Reload
