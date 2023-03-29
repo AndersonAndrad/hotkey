@@ -7,7 +7,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetCapsLockState, AlwaysOff
 
 /*
-CAPSLOCK ====================
+CAPSLOCK 
 */
 ; Arrows
 CapsLock & w::Up
@@ -40,6 +40,7 @@ CapsLock & n::Send +{9} ; (
 CapsLock & m::Send +{0} ; )
 
 CapsLock & l::Send +{-}
+CapsLock & /::Send {=}
 CapsLock & `;::Send +{=}
 
 CapsLock & c::?
