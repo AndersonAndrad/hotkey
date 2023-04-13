@@ -23,6 +23,10 @@ CapsLock & e::Send {Ctrl Down}{Delete}{Ctrl Up}
 CapsLock & z::Send ^{Left}
 CapsLock & x::Send ^{Right}
 
+; Navigate to start ans end to line
+CapsLock & b::Send {End}
+CapsLock & v::Send {Home}
+
 ; Reload script
 CapsLock & r::Reload
 
