@@ -20,12 +20,12 @@ CapsLock & q::Send {Ctrl Down}{BackSpace}{Ctrl Up}
 CapsLock & e::Send {Ctrl Down}{Delete}{Ctrl Up}
 
 ; Navigate to start and end to word 
-CapsLock & z::Send ^{Left}
-CapsLock & x::Send ^{Right}
+CapsLock & x::Send ^{Left}
+CapsLock & c::Send ^{Right}
 
 ; Navigate to start ans end to line
-CapsLock & b::Send {End}
-CapsLock & v::Send {Home}
+CapsLock & v::Send {End}
+CapsLock & z::Send {Home}
 
 ; Reload script
 CapsLock & r::Reload
@@ -47,7 +47,7 @@ CapsLock & l::Send +{-}
 CapsLock & /::Send {=}
 CapsLock & `;::Send +{=}
 
-CapsLock & c::?
+CapsLock & b::?
 
 CapsLock & ,::[
 CapsLock & .::]
