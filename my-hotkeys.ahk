@@ -74,3 +74,17 @@ CapsLock & 9::F9
 CapsLock & 0::F10
 CapsLock & -::F11
 CapsLock & =::F12
+
+statusWinKey := true
+
+; Toggle Windows key
+CapsLock & Backspace::
+    statusWinKey := !statusWinKey
+    return
+
+LWin::
+    if (statusWinKey)
+    {
+        Send {Blind}{vk5B}
+    }
+    return
