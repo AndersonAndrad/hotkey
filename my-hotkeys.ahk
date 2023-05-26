@@ -88,3 +88,46 @@ LWin::
         Send {Blind}{vk5B}
     }
     return
+
+; RAlt execute some softwares
+RAlt & c:: openVsCodeByCurrentLocation()
+RAlt & v:: openVsCode()
+RAlt & g:: openChrome()
+RAlt & t:: openTeams()
+
+; Open only vscode
+openVsCode(){
+    run, "C:\Program Files\Microsoft VS Code\Code.exe"
+    return
+}
+
+; Open vscode in current folder
+openVsCodeByCurrentLocation(){
+    path := GetActiveExplorerPath()
+    run, "C:\Program Files\Microsoft VS Code\Code.exe" "%path%"
+    return
+}
+
+openChrome(){
+    run, "C:\Program Files\Google\Chrome\Application\chrome.exe"
+    return
+}
+
+openTeams(){
+    run, "C:\Users\Ander\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Microsoft Teams (work or school).lnk"
+    return
+}
+
+GetActiveExplorerPath(){
+    explorerHwnd := WinActive("ahk_class CabinetWClass")
+    if (explorerHwnd)
+    {
+        for window in ComObjCreate("Shell.Application").Windows
+        {
+            if (window.hwnd==explorerHwnd)
+            {
+                return window.Document.Folder.Self.Path
+            }
+        }
+    }
+}
