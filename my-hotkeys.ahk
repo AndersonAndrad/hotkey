@@ -16,7 +16,7 @@ CapsLock & d::Right
 CapsLock & s::Down
 
 ; Delete all word in left and right 
-CapsLock & q::Send {Ctrl Down}{BackSpace}{Ctrl Up}
+CapsLock & q::Send {LCtrl Down}{BackSpace}{LCtrl Up}
 CapsLock & e::Send {Ctrl Down}{Delete}{Ctrl Up}
 
 ; Navigate to start and end to word 
