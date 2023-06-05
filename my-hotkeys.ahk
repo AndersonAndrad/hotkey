@@ -75,19 +75,8 @@ CapsLock & 0::F10
 CapsLock & -::F11
 CapsLock & =::F12
 
-statusWinKey := true
-
-; Toggle Windows key
-CapsLock & Backspace::
-    statusWinKey := !statusWinKey
-    return
-
-LWin::
-    if (statusWinKey)
-    {
-        Send {Blind}{vk5B}
-    }
-    return
+; Commands for git
+LAlt & u:: Send, git upgrade
 
 ; RAlt execute some softwares
 RAlt & c:: openVsCodeByCurrentLocation()
